@@ -1,0 +1,18 @@
+//SPDX-License-Identifier: GLP -3.0
+pragma solidity >=0.8.2 <0.9.0;
+
+import "@openzeppelin/contracts@4.9.3/utils/Counters.sol";
+
+contract Intro {
+    uint256 public cantidad;
+    string public nombre="Upao";
+
+    constructor(uint256 _valorCantidad){
+        cantidad = _valorCantidad;
+
+    }
+    function cambiarCantidad(uint256 _cantidad) public {
+        cantidad = _cantidad;
+
+    }
+}
